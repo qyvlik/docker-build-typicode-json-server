@@ -6,3 +6,5 @@ RUN npm install -g json-server@$JSON_SERVER_VERSION
 
 WORKDIR /data
 VOLUME /data
+
+EXPOSE 3000
