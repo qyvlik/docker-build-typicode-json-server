@@ -1,0 +1,13 @@
+
+version: '2.0'
+services:
+  json-server:
+    image: qyvlik/typicode-json-server:0.17.3
+    command:
+      - json-server
+      - --watch
+      - db.json
+    volumes:
+      - ./data:/data
+    ports:
+      - 8080:80
