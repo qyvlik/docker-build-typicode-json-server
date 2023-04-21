@@ -7,7 +7,9 @@ services:
       - json-server
       - --watch
       - db.json
+      - --host
+      - 0.0.0.0
     volumes:
       - ./data:/data
     ports:
-      - 8080:3000
+      - "3000:3000"
